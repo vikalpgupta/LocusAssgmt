@@ -1,7 +1,14 @@
 var path = require("path");
-
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
+
+var basePlugin = [
+    new CopyWebpackPlugin([{
+        from: SRC_DIR + "/app/index.css",
+        to: DIST_DIR + "/app/index.css"
+    }])
+];
 
 var config = {
     entry: SRC_DIR + "/app/index.js",
@@ -21,7 +28,8 @@ var config = {
                 }
             }
         ]
-    }
+    },
+    plugins: basePlugin
 };
 
 module.exports = config;

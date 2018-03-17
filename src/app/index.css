@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.comp-shell {
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 200px;
+}
+
+.search-input {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+}
+
+.cross {
+    position: absolute;
+    right: 3px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.suggestion-cont {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.suggestion > p {
+    margin: 0;
+}
+
+.suggestion.selected {
+    background-color: yellow;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-result {
+    padding: 20px;
+    font-weight: bold;
+}
