@@ -1,7 +1,7 @@
 {
-  "name": "reactjs-basics",
+  "name": "Locus-Assignment",
   "version": "1.0.0",
-  "description": "Some basic ReactJS",
+  "description": "AutoSuggestor",
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
@@ -11,7 +11,7 @@
   "keywords": [
     "reactjs"
   ],
-  "author": "Maximilian Schwarzmueller",
+  "author": "Vikalp Gupta",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
